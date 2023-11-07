@@ -1,14 +1,103 @@
 .position-relative {
-    position: relative;
+  position: relative;
+}
+
+.to {
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  margin-top: 70px;
+  font-weight: bold;
+}
+
+.from {
+  position: absolute;
+  right: 70px;
+  bottom: 0px;
+  font-weight: bold;
+
+}
+
+.theme-orange {
+  background-color: orange !important;
+}
+
+.theme-red {
+  background-color: red !important;
+}
+
+.theme-blue {
+  background-color: blue !important;
+}
+
+.theme-yellow {
+  background-color: yellow !important;
+}
+
+.theme-purple {
+  background-color: purple !important;
+  color: white !important;
+}
+
+.input-box {
+  border: 1px solid black;
+  width: 270px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+::placeholder {
+  color: black;
+}
+
+.select-container {
+  width: 270px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.content {
+}
+
+.new-card {
+  /* height: 300px; */
+  width: 600px;
+  padding: 70px;
+  margin: 0 auto;
+}
+
+.left-lamp {
+  height: 70px;
+  top: -137px;
+}
+.right-lamp {
+  height: 70px;
+  top: -137px;
+  right: 1px;
+}
+.lamp {
+  height: 50px;
+  bottom: -180px;
+  right: 20px;
+}
+
+@media (max-width: 768px) {
+  .custom-card {
+    width: 100% !important;
   }
-  .to {
-    position: absolute;
-    top : 8px;
-    left : 15px;
+  .lamp {
+    height: 40px;
+    bottom: -240px;
+    right: 135px;
   }
-  .from {
-    position: absolute;
-  
-    right : 15px;
-    bottom :0px;
+  .left-lamp {
+    height: 50px;
+    top: -40px;
   }
+  .right-lamp {
+    height: 50px;
+    top: -40px;
+    right: 1px;
+  }
+}
