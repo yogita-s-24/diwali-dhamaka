@@ -73,7 +73,21 @@ function Home() {
           Do You Want To Create Your Own Diwali Greeting ?<br /> Customize it here and Share it.👇🏻{" "}
         </p>
       </div>
-   
+      <div className="container w-75 border shadow rounded-2 pt-4 pb-2 text-center fw-bold fs-6 ">
+        <p style={{ cursor: 'pointer' }}
+          onClick={() => {
+            const url = `${import.meta.env.VITE_BASE_URL
+              }?to=${to}&from=${from}&s=${greetingNumber}&t=${theme}`;
+            {
+              navigator.clipboard.writeText(url);
+              alert(`Url coppied successfully ${url}`)
+            }
+          }}
+        >
+          {import.meta.env.VITE_BASE_URL}?to={to}&from={from}&s={greetingNumber}
+          &t={theme}
+        </p>
+      </div>
 
       <div className="container">
 
