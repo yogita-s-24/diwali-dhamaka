@@ -30,7 +30,7 @@ function Home() {
     return (
         <>
             <div className="container mt-5">
-                <div className={`card shadow new-card ${`theme-${theme}`}`} >
+                <div className={`card shadow custom-card ${`theme-${theme}`}`} >
                     <div className="card-body  content">
                     <div className=" mt-5 position-relative ">
             <img
@@ -38,12 +38,15 @@ function Home() {
               alt="diwali-lamp "
               className="position-absolute left-lamp"
             />
-            <img src={Lamp} alt="lamp" className="position-absolute lamp" />
+            {/* <img src={Lamp} alt="lamp" className="position-absolute lamp" /> */}
             <img
               src={DiwaliLamp}
               alt="diwali-lamp"
               className="position-absolute right-lamp"
             />
+            
+          
+            
           </div>
                         <div className="to fs-6 fw">
                             <p className=""> 💐Dear {to}</p>
@@ -64,14 +67,38 @@ function Home() {
                 </div>
             </div>
 
+            <div
+        className="container text-center  fw-bold fs-4 mt-4">
+        <p>
+          Do You Want To Create Your Own Diwali Greeting ?<br/> Customize it here and Share it.👇🏻{" "}
+        </p>
+      </div>
+      <div className="container w-75 border shadow rounded-2 pt-4 pb-2 text-center fw-bold fs-6 ">
+        <p style={{cursor: 'pointer'}}
+          onClick={() => {
+            const url = `${
+              import.meta.env.VITE_BASE_URL
+            }?to=${to}&from=${from}&s=${greetingNumber}&t=${theme}`;
+            {
+              navigator.clipboard.writeText(url);
+              alert(`url coppied successfully ${url}`)
+            }
+          }}
+        >
+          {import.meta.env.VITE_BASE_URL}?to={to}&from={from}&s={greetingNumber}
+          &t={theme}
+        </p>
+      </div>
+
             <div className="container">
-                <div className="row">
+                
+                <div className="row mb-4">
                     <div className="col-md-3">
-                        <input type="text" className="mt-5 input-box" placeholder="To" />
+                        <input type="text" className="mt-5 input-box shadow" placeholder="To" />
                     </div>
 
                     <div className="col-md-3">
-                        <input type="text" className="mt-5 input-box" placeholder="From" />
+                        <input type="text" className="mt-5 input-box shadow" placeholder="From" />
                     </div>
                     <div className="col-md-3">
                         <select className="mt-5 select-container"

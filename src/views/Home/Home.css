@@ -57,10 +57,7 @@
   border-radius: 5px;
 }
 
-.content {
-}
-
-.new-card {
+.custom-card {
   /* height: 300px; */
   width: 600px;
   padding: 70px;
@@ -83,21 +80,24 @@
 }
 
 @media (max-width: 768px) {
+
   .custom-card {
     width: 100% !important;
   }
-  .lamp {
+  /* .lamp {
     height: 40px;
     bottom: -240px;
     right: 135px;
-  }
+  } */
   .left-lamp {
     height: 50px;
-    top: -40px;
+    top: -137px;
   }
   .right-lamp {
     height: 50px;
-    top: -40px;
+    top: -137px;
     right: 1px;
   }
+  
+
 }
