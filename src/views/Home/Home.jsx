@@ -76,12 +76,11 @@ function Home() {
       <div className="container w-75  border shadow rounded-2 pt-4 pb-2 text-center fw-bold fs-6 ">
         <p style={{ cursor: 'pointer' }}
           onClick={() => {
-            const url = `${import.meta.env.VITE_BASE_URL
-              }?to=${to}&from=${from}&s=${greetingNumber}&t=${theme}`;
-            {
+          const url = `${
+            import.meta.env.VITE_BASE_URL
+          }?to=${to}&from=${from}&s=${greetingNumber}&t=${theme}`;
               navigator.clipboard.writeText(url);
               alert(`Url coppied successfully ${url}`)
-            }
           }}
         >
           {import.meta.env.VITE_BASE_URL}?to={to}&from={from}&s={greetingNumber}
@@ -114,7 +113,7 @@ function Home() {
               }
             />
           </div>
-          
+
           <div className="col-md-3 select-content-body">
             <select className="select-container select-container-card"
               value={greetingNumber}
