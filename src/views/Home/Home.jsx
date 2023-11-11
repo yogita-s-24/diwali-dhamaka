@@ -88,7 +88,7 @@ function Home() {
         </p>
       </div>
 
-      <div className="container border shadow rounded-2 mt-3 fs-6 botton-container">
+      <div className="container border shadow rounded-2 mt-3 fs-6 botton-container w-75">
       <div className="card-body  content">
         <div className="row card-body-container">
           <div className="col-md-3">
