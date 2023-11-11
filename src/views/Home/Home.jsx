@@ -73,7 +73,7 @@ function Home() {
           Do You Want To Create Your Own Diwali Greeting ? Customize it here and Share it.👇🏻{" "}
         </p>
       </div>
-      <div className="container w-75  border shadow rounded-2 pt-4 pb-2 text-center fw-bold fs-6">
+      <div className="container w-75  border shadow rounded-2  bg-light pt-4 pb-2 text-center fw-bold fs-6">
         <p style={{ cursor: 'pointer' }}
           onClick={() => {
             const url = `${import.meta.env.VITE_BASE_URL
@@ -87,7 +87,7 @@ function Home() {
         </p>
       </div>
 
-      <div className="container border shadow rounded-2 my-4 fs-6 botton-container w-75">
+      <div className="container border shadow rounded-2 my-4 bg-light fs-6 botton-container w-75">
         <div className="card-body  content">
           <div className="row card-body-container">
             <div className="col-md-3">
