@@ -76,11 +76,10 @@ function Home() {
       <div className="container w-75  border shadow rounded-2 pt-4 pb-2 text-center fw-bold fs-6 ">
         <p style={{ cursor: 'pointer' }}
           onClick={() => {
-          const url = `${
-            import.meta.env.VITE_BASE_URL
-          }?to=${to}&from=${from}&s=${greetingNumber}&t=${theme}`;
-              navigator.clipboard.writeText(url);
-              alert(`Url coppied successfully ${url}`)
+            const url = `${import.meta.env.VITE_BASE_URL
+              }?to=${to}&from=${from}&s=${greetingNumber}&t=${theme}`;
+            navigator.clipboard.writeText(url);
+            alert(`Url coppied successfully ${url}`)
           }}
         >
           {import.meta.env.VITE_BASE_URL}?to={to}&from={from}&s={greetingNumber}
@@ -89,64 +88,64 @@ function Home() {
       </div>
 
       <div className="container border shadow rounded-2 mt-3 fs-6 botton-container w-75">
-      <div className="card-body  content">
-        <div className="row card-body-container">
-          <div className="col-md-3">
-            <input type="text"
-              className="input-box"
-              placeholder="To.."
-              value={to}
-              onChange={(e) => {
-                setTo(e.target.value)
-              }
-              } />
-          </div>
+        <div className="card-body  content">
+          <div className="row card-body-container">
+            <div className="col-md-3">
+              <input type="text"
+                className="input-box"
+                placeholder="To.."
+                value={to}
+                onChange={(e) => {
+                  setTo(e.target.value)
+                }
+                } />
+            </div>
 
-          <div className="col-md-3">
-            <input type="text"
-              className="input-box"
-              placeholder="From"
-              value={from}
-              onChange={(e) => {
-                setFrom(e.target.value)
-              }
-              }
-            />
-          </div>
+            <div className="col-md-3">
+              <input type="text"
+                className="input-box"
+                placeholder="From"
+                value={from}
+                onChange={(e) => {
+                  setFrom(e.target.value)
+                }
+                }
+              />
+            </div>
 
-          <div className="col-md-3 select-content-body">
-            <select className="select-container select-container-card"
-              value={greetingNumber}
-              onChange={(e) => {
-                setGreetingNumber(e.target.value);
-              }}>
-              <option value={0}>Gretting-1</option>
-              <option value={1}>Gretting-2</option>
-              <option value={2}>Gretting-3</option>
-              <option value={3}>Gretting-4</option>
-              <option value={4}>Gretting-5</option>
-            </select>
-          </div>
+            <div className="col-md-3 select-content-body">
+              <select className="select-container select-container-card"
+                value={greetingNumber}
+                onChange={(e) => {
+                  setGreetingNumber(e.target.value);
+                }}>
+                <option value={0}>Gretting-1</option>
+                <option value={1}>Gretting-2</option>
+                <option value={2}>Gretting-3</option>
+                <option value={3}>Gretting-4</option>
+                <option value={4}>Gretting-5</option>
+              </select>
+            </div>
 
-          <div className="col-md-3 select-content-body ">
-            <select className="select-container select-container-card"
-              value={theme}
-              onChange={(e) => {
-                setTheme(e.target.value);
-              }}>
-              <option value="brown">Brown Theme</option>
-              <option value="red">Red Theme</option>
-              <option value="purple">Purple Theme</option>
-              <option value="dark-purple">Deep Purple Theme</option>
-              <option value="pink">Pink Theme</option>
-              <option value="light">Light Theme</option>
-              <option value="light-sky">Light Sky Theme</option> 
-              <option value="orange">Orange Theme</option> 
-            </select>
+            <div className="col-md-3 select-content-body ">
+              <select className="select-container select-container-card"
+                value={theme}
+                onChange={(e) => {
+                  setTheme(e.target.value);
+                }}>
+                <option value="brown">Brown Theme</option>
+                <option value="red">Red Theme</option>
+                <option value="purple">Purple Theme</option>
+                <option value="dark-purple">Deep Purple Theme</option>
+                <option value="pink">Pink Theme</option>
+                <option value="light">Light Theme</option>
+                <option value="light-sky">Light Sky Theme</option>
+                <option value="orange">Orange Theme</option>
+              </select>
+            </div>
           </div>
         </div>
-        </div>
-      </div>    
+      </div>
     </>
   )
 }
