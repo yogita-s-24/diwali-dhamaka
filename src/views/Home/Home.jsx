@@ -29,7 +29,7 @@ function Home() {
 
   return (
     <>
-      <div className="container mt-3">
+      <div className="container mt-5">
         <div className={`card shadow custom-card ${`theme-${theme}`}`} >
           <div className="card-body  content">
             <div className=" mt-5 position-relative ">
@@ -68,12 +68,12 @@ function Home() {
       </div>
 
       <div
-        className="container text-center fw-bold fs-5 mt-4">
+        className="container text-center fw-bold fs-5" style={{marginTop:"130px"}}>
         <p>
           Do You Want To Create Your Own Diwali Greeting ? Customize it here and Share it.👇🏻{" "}
         </p>
       </div>
-      <div className="container w-75  border shadow rounded-2 pt-4 pb-2 text-center fw-bold fs-6 ">
+      <div className="container w-75  border shadow rounded-2 pt-4 pb-2 text-center fw-bold fs-6">
         <p style={{ cursor: 'pointer' }}
           onClick={() => {
             const url = `${import.meta.env.VITE_BASE_URL
@@ -87,7 +87,7 @@ function Home() {
         </p>
       </div>
 
-      <div className="container border shadow rounded-2 mt-3 fs-6 botton-container w-75">
+      <div className="container border shadow rounded-2 my-4 fs-6 botton-container w-75">
         <div className="card-body  content">
           <div className="row card-body-container">
             <div className="col-md-3">
