@@ -90,6 +90,7 @@ function Home() {
       </div>
 
       <div className="container border shadow rounded-2 mt-3 fs-6 botton-container">
+      <div className="card-body  content">
         <div className="row card-body-container">
           <div className="col-md-3">
             <input type="text"
@@ -111,11 +112,11 @@ function Home() {
                 setFrom(e.target.value)
               }
               }
-
             />
           </div>
-          <div className="col-md-3 ">
-            <select className="select-container select-content-body"
+          
+          <div className="col-md-3 select-content-body">
+            <select className="select-container select-container-card"
               value={greetingNumber}
               onChange={(e) => {
                 setGreetingNumber(e.target.value);
@@ -128,8 +129,8 @@ function Home() {
             </select>
           </div>
 
-          <div className="col-md-3 select-content-body">
-            <select className="select-container "
+          <div className="col-md-3 select-content-body ">
+            <select className="select-container select-container-card"
               value={theme}
               onChange={(e) => {
                 setTheme(e.target.value);
@@ -144,6 +145,7 @@ function Home() {
               <option value="orange">Orange Theme</option> 
             </select>
           </div>
+        </div>
         </div>
       </div>    
     </>

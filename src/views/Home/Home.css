@@ -19,6 +19,8 @@
 
 .botton-container {
   height: 75px;
+  display: block !important;
+  margin: 0 auto !important;
 }
 
 .theme-brown {
@@ -103,8 +105,9 @@
 
 .input-box {
   border: none;
-  width: 270px;
+  width: 240px;
   padding: 5px;
+  height: 38px !important;
   margin-top: 18px;
   border-radius: 5px;
   height: 40px !important;
@@ -115,8 +118,8 @@
   color: black;
 }
 
-.select-container {
-  width: 270px;
+.select-container-card {
+  width: 240px;
   padding: 5px;
   margin-top: 18px;
   border: 1px solid black;
@@ -148,10 +151,6 @@
   right: 20px;
 }
 
-.select-content-body{
-  padding-left: 0px !important;
-}
-
 @media (max-width: 768px) {
   .custom-card {
     width: 100% !important;
@@ -159,34 +158,29 @@
 
   .left-lamp {
     height: 50px;
-    top: -137px;
+    top: -117px;
   }
+
   .right-lamp {
     height: 50px;
-    top: -137px;
+    top: -117px;
     right: 1px;
   }
 
   .botton-container {
     height: 100%;
+    width: 400px !important;
+    padding: 20px 0 !important;
   }
-  .select-container {
-    /* margin-top: 20px !important; */
-    display: block;
+
+  .select-container-card {
+    display: block !important;
     margin: 10px auto !important;
   }
 
   .input-box {
-    /* margin-top: 20px !important; */
     display: block;
-
     margin: 10px auto !important;
-
   }
 
-  .botton-container {
-    width: 400px !important;
-    padding: 20px 2px 30px;
-    margin: 10px 2px;
-  }
 }
