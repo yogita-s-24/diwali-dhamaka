@@ -29,7 +29,7 @@ function Home() {
 
   return (
     <>
-      <div className="container mt-5">
+      <div className="container mt-3">
         <div className={`card shadow custom-card ${`theme-${theme}`}`} >
           <div className="card-body  content">
             <div className=" mt-5 position-relative ">
@@ -68,12 +68,12 @@ function Home() {
       </div>
 
       <div
-        className="container text-center  fw-bold fs-4 mt-4">
+        className="container text-center fw-bold fs-5 mt-4">
         <p>
-          Do You Want To Create Your Own Diwali Greeting ?<br /> Customize it here and Share it.👇🏻{" "}
+          Do You Want To Create Your Own Diwali Greeting ? Customize it here and Share it.👇🏻{" "}
         </p>
       </div>
-      <div className="container w-75 border shadow rounded-2 pt-4 pb-2 text-center fw-bold fs-6 ">
+      <div className="container w-75  border shadow rounded-2 pt-4 pb-2 text-center fw-bold fs-6 ">
         <p style={{ cursor: 'pointer' }}
           onClick={() => {
             const url = `${import.meta.env.VITE_BASE_URL
@@ -89,12 +89,11 @@ function Home() {
         </p>
       </div>
 
-      <div className="container">
-
-        <div className="row mb-4">
+      <div className="container border shadow rounded-2 mt-3 fs-6 botton-container">
+        <div className="row card-body-container">
           <div className="col-md-3">
             <input type="text"
-              className="mt-5 input-box shadow"
+              className="input-box"
               placeholder="To.."
               value={to}
               onChange={(e) => {
@@ -105,7 +104,7 @@ function Home() {
 
           <div className="col-md-3">
             <input type="text"
-              className="mt-5 input-box shadow"
+              className="input-box"
               placeholder="From"
               value={from}
               onChange={(e) => {
@@ -115,8 +114,8 @@ function Home() {
 
             />
           </div>
-          <div className="col-md-3">
-            <select className="mt-5 select-container"
+          <div className="col-md-3 ">
+            <select className="select-container select-content-body"
               value={greetingNumber}
               onChange={(e) => {
                 setGreetingNumber(e.target.value);
@@ -129,22 +128,24 @@ function Home() {
             </select>
           </div>
 
-          <div className="col-md-3">
-            <select className="mt-5 select-container"
+          <div className="col-md-3 select-content-body">
+            <select className="select-container "
               value={theme}
               onChange={(e) => {
                 setTheme(e.target.value);
               }}>
-              <option value="orange">Orange Theme</option>
-              <option value="red" className="bg-danger">Red Theme</option>
-              <option value="purple">Purplr Theme</option>
-              <option value="blue">Blue Theme</option>
-              <option value="yellow">Yellow Theme</option>
+              <option value="brown">Brown Theme</option>
+              <option value="red">Red Theme</option>
+              <option value="purple">Purple Theme</option>
+              <option value="dark-purple">Deep Purple Theme</option>
+              <option value="pink">Pink Theme</option>
+              <option value="light">Light Theme</option>
+              <option value="light-sky">Light Sky Theme</option> 
+              <option value="orange">Orange Theme</option> 
             </select>
           </div>
         </div>
-
-      </div>
+      </div>    
     </>
   )
 }
